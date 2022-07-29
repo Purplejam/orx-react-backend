@@ -8,6 +8,8 @@ export function isSignedIn({ session }: ListAccessArgs) {
   return !!session;
 }
 
+
+//@ts-ignore
 const generatedPermissions = Object.fromEntries(
   permissionsList.map((permission) => [
     permission,
