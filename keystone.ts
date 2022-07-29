@@ -14,7 +14,7 @@ import {extendGraphqlSchema} from './mutations/index';
 import {Role} from './schemas/Role';
 import {permissionsList} from './schemas/fields';
 
-const databaseURL = process.env.DATABASE_URL || 'mongodb://localhost/keystone-sick-fits';
+const databaseURL = process.env.DATABASE_URL;
 const sessionConfig = {
   maxAge: 60 * 60 * 24 * 360, // how long should they stay signed in
   secret: process.env.COOKIE_SECRET
@@ -52,6 +52,10 @@ export default withAuth(
           await insertSeedData(keystone);
         }   
       }
+    },
+    experimental: {
+      generateNextGraphqlAPI: true,
+      generateNodeAPI: true,
     },
     lists: createSchema({
       User,
