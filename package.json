@@ -1,8 +1,8 @@
 {
-  "name": "sick-fits-backend",
+  "name": "orx-react-backend",
   "version": "2.0.0",
   "private": true,
-  "author": "Wes Bos",
+  "author": "Alex K",
   "license": "MIT",
   "scripts": {
     "dev": "keystone-next",
