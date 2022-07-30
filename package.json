@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "keystone-next",
-    "start": "keystone-next --openssl-legacy-provider start",
-    "build": "keystone-next keystone-next --openssl-legacy-provider build",
+    "start": "keystone-next start",
+    "build": "keystone-next keystone-next build",
     "seed-data": "keystone-next --seed-data"
   },
   "eslintConfig": {
@@ -71,7 +71,7 @@
     "typescript": "^4.1.2"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": "14.0.0"
   },
   "repository": ""
 }
