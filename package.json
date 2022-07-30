@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "keystone-next",
     "start": "keystone-next --openssl-legacy-provider start",
-    "build": "keystone-next build",
+    "build": "keystone-next keystone-next --openssl-legacy-provider build",
     "seed-data": "keystone-next --seed-data"
   },
   "eslintConfig": {
