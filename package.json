@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "keystone-next",
-    "start": "keystone-next start",
+    "start": "keystone-next --openssl-legacy-provider start",
     "build": "keystone-next build",
     "seed-data": "keystone-next --seed-data"
   },
