@@ -39,9 +39,8 @@ export default withAuth(
   config({
     server: {
       cors: {
-        //origin: [process.env.FRONTEND_URL],
-        //origin: true,
-        //credentials: true, 
+        origin: [process.env.FRONTEND_URL],
+        credentials: true, 
       },
     },
     db: {
@@ -53,10 +52,10 @@ export default withAuth(
         }   
       }
     },
-    experimental: {
+/*    experimental: {
       generateNextGraphqlAPI: true,
       generateNodeAPI: true,
-    },
+    },*/
     lists: createSchema({
       User,
       Product,
